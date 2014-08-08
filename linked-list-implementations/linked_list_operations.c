@@ -66,7 +66,6 @@ void create(list **p)
 	scanf("%d",&temp);
 	if(temp==-999)
 	{
-		(*p)->data=7;
 		(*p)=NULL;
 	}
 	else
@@ -139,7 +138,6 @@ void delete(list **p, int a)
 	list *temp;
 	if((*p)->data==a)
 	{
-		printf("hello\n");
 		temp=(*p)->next;
 		free(*p);
 		(*p)=temp;
