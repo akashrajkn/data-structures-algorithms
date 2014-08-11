@@ -54,11 +54,8 @@ void insert( list **node, char key[] )
     if( !(temp-> children[index]) )
     {
       temp->children[index] = malloc(sizeof(list));
-      for(j=0; j<26; j++)
-      {
-        temp->children[index]->children[j] = NULL;
-      }
     }
+
     temp = temp->children[index];
   }
 
